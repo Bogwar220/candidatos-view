@@ -1,0 +1,39 @@
+<body>
+  <div align = "center">
+    <h1>{{candidato.nombre}}: {{expLab.puesto}}</h1>
+  </div>
+
+  <div align = "right" id = "edit">
+    <a routerLink = "/editExpLab"><button>Modificar</button></a>
+  </div>
+
+  <div align = "center">
+    <table>
+      <tr>
+        <td>Puesto</td>
+        <td>{{expLab.puesto}}</td>
+      </tr>
+      <tr>
+        <td>Empresa</td>
+        <td>{{expLab.empresa}}</td>
+      </tr>
+      <tr>
+        <td>Funciones</td>
+        <td>{{expLab.funciones}}</td>
+      </tr>
+      <tr>
+        <td>Cliente</td>
+        <td>{{expLab.cliente}}</td>
+      </tr>
+      <tr>
+        <td>Fecha de inicio</td>
+        <td>{{expLab.fechaIni}}</td>
+      </tr>
+      <tr>
+        <td>Fecha final</td>
+        <td>{{expLab.fechaFin}}</td>
+      </tr>
+    </table>
+    <a routerLink = "/expLab"><button id = "volver">Volver</button></a>
+  </div>
+</body>

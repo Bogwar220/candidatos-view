@@ -1,0 +1,22 @@
+#body{
+    color: white;
+}
+button{
+    margin-top: 30px;
+    width: 100px;
+    height: 20px;
+}
+#volver{
+    margin-left: 80px;
+}
+.inputs{
+  
+    text-align: center;
+}
+.underlines{
+    border-bottom: solid 1px whitesmoke;
+}
+table{
+    border-spacing: 10px;
+    background-color: darkmagenta; 
+}

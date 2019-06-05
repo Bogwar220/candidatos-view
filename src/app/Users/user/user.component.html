@@ -1,0 +1,22 @@
+
+<nav *ngIf = "!user.conn">
+  <div id = "connect">
+    <p><input type = "text" id = "nombre" placeholder="Username"/><p>
+    <p><input type = "password" id = "pass" placeholder="Password"/></p>
+    <button (click) = "getUser()" id = "logIn">LogIn</button>
+    <a routerLink = "/addUser"><button id = "signUp">SignUp</button></a>
+  </div>
+</nav>
+
+<nav *ngIf = "user.conn">
+  <div id = "desconnect">
+    <a routerLink = "/candidato"><button id = "candidatos">Candidatos</button></a>
+    <a routerLink = "/tecnologia"><button>Tecnologias</button></a>
+    <span id = "user">
+      User:   <span id = "nombreUser">{{user.nombre}}</span>
+      <a routerLink = ''><button (click) = "desc()">Desconectar</button></a>
+    </span>
+  </div>
+</nav>
+
+

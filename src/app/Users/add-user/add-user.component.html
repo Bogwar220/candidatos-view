@@ -1,0 +1,22 @@
+<div align = "center" id = "body">
+  <h2>Create User</h2>
+  {{mensaje}}
+  <table>
+    <tr>
+      <td>User: </td>
+      <td><input type = "text" id = "nombre1"/></td>
+    </tr>
+    <tr>
+      <td>Password: </td>
+      <td><input type = "password" id = "pass1"/></td>
+    </tr>
+    <tr>
+      <td>Confirm password: </td>
+      <td><input type = "password" id = "pass2"/></td>
+    </tr>
+    <tr>
+      <td><button (click) = "addUser()" id = "add">Create</button></td>
+      <td><a routerLink = ''><button id = "volver">Cerrar</button></a></td>
+    </tr>
+  </table>
+</div>

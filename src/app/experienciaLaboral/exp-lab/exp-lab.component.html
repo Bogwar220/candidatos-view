@@ -1,0 +1,51 @@
+<body>
+<div align = "center">
+  <h1>Experiencia laboral de : {{candidato.nombre}}</h1>
+</div>
+
+<div class = "tbl-header">
+  <table cellpadding = "0" cellspacing = "0" border = "0">
+    <thead>
+      <tr>
+        <th><h3>Puesto</h3></th>
+        <th></th>
+        <th> <a routerLink = "/addExpLab"><button>Añadir experiencia laboral</button></a></th>
+
+        <!--
+        <th><h3>Empresa</h3></th>
+        <th><h3>Funciones</h3></th>
+        <th><h3>Cliente</h3></th>
+        <th><h3>Fecha de inicio</h3></th>
+        <th><h3>Fecha final</h3></th>
+        <th></th>
+
+        -->
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<div class = "tbl-content">
+  <table cellpadding = "0" cellspacing = "0" border = "0">
+    <tbody>    <tr *ngFor ="let expLab of expsLab">
+        <td>{{expLab.puesto}}</td>
+        <td class = "opciones">
+          <a routerLink = "/viewExpLab"><button (click) = "getExpLab(expLab)" id = "ver">Ver</button></a>
+        </td>
+        <!--
+        <td>{{expLab.empresa}}</td>
+        <td>{{expLab.funciones}}</td>
+        <td>{{expLab.cliente}}</td>
+        <td>{{expLab.fechaIni}}</td>
+        <td>{{expLab.fechaFin}}</td>
+        -->
+        <td class = "opciones">
+          <a routerLink = "/editExpLab"><button (click) = "getExpLab(expLab)">Modificar</button></a>
+          <button (click) = "delExpLab(expLab)">Borrar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>  
+</div>
+<a routerLink = "/candidato"><button id = "volver">Volver</button></a>
+</body>

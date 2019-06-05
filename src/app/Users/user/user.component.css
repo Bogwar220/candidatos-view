@@ -1,0 +1,40 @@
+#connect{    
+    margin-left: 590px; 
+}
+#nombre{
+    width: 300px;
+    height: 30px; 
+}
+#pass{
+    width: 300px;
+    height: 30px;
+}
+::-webkit-input-placeholder {
+    text-align: center;
+}
+#logIn{
+    margin-left: 15px;
+}
+#signUp{
+    margin-left: 75px;
+}
+button{
+    width: 100px;
+    height: 20px;
+}
+#user{    
+    font-family: "Comic Sans MS", "Comic Sans", cursive;  
+    color:white;
+    float: right;
+    margin-right: 15px;
+}
+#desconnect{
+    margin-left: 15px;
+}
+#nombreUser{
+    font-weight: bolder;
+    margin-right: 15px;
+}
+#candidatos{
+    margin-right:15px;
+}

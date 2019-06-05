@@ -1,0 +1,50 @@
+<body>
+  <div align = "center">
+    <h1>
+      Candidatos
+    </h1>
+  </div>
+    
+  <div class = "tbl-header">
+    <table cellpadding = "0" cellspacing = "0" border = "0">
+      <thead>
+        <tr>    
+          <th><h3>Nombre</h3></th>
+          <th><h3>Apellido1</h3></th>          
+          <th><h3>Detalles</h3></th>
+          <th><h3>Tecnologias</h3></th>
+          <th><h3>Experiencia Laboral</h3></th>
+          <th><h3>Titulos</h3></th>
+          <th><a routerLink = "/addCandidato" routerLinkActivated = "active"><button>AñadirCandidato</button></a></th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class = "tbl-content">
+    <table cellpadding = "0" cellspacing = "0" border = "0">
+      <tbody>
+        <tr *ngFor = "let candidato of candidatos">     
+          <td>{{candidato.nombre}}</td>
+          <td>{{candidato.apellido1}}</td>         
+          <td>
+            <a routerLink = "/viewCandidato"><button (click) = "getCand(candidato)">Detalles</button></a>
+          </td>         
+          <td>
+            <a routerLink = "/candTec" routerLinkActivated = "active"><button (click) = "getCand(candidato)">Tecnologias</button></a>
+          </td>
+          <td>
+            <a routerLink = "/expLab" routerLinkActivated = "active"><button (click) = "getCand(candidato)">Experiencia Laboral</button></a>
+          </td>
+          <td>
+            <a routerLink = "/titulo"><button (click) = "getCand(candidato)">Titulos</button></a>
+          </td>
+          <td>
+            <button (click) = "delCand(candidato.id)" id = "delBt">Borrar</button>        
+            <a routerLink = "/editCandidato" routerActive = "active"><button (click) = "getCand(candidato)">Modificar</button></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <br/>
+</body>

@@ -1,0 +1,16 @@
+body{
+    color: white;
+}
+td{
+    border-bottom: solid 1px whitesmoke;
+}
+table{
+    border-spacing: 10px;
+    background-color: darkmagenta; 
+}
+#edit{
+    margin-right: 500px;
+}
+#volver{
+    margin-top: 15px;
+}

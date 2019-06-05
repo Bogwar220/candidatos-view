@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+    color:white;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;    
+}
+body{   
+    width: auto;
+    height: auto;
+    padding-bottom: 500px;
+    background-color: #7457C5;
+    background-image: url("../assets/metricaLogo.jpg");
+    background-repeat: no-repeat;   
+    background-position-x: 1000px;
+    background-position-y: 0px;
+}
+
+#metrica{
+    background-color: white;
+    margin-left: 1110px;
+    margin-right: 720px;    
+    margin-bottom: 0px;
+    font-family: "Comic Sans MS","Comic Sans", cursive;
+    color:#7457C5;
+    font-size: 30px;
+    padding-top: 100px;
+}
+#etrica{
+    background-color: #7457C5;
+    margin-left: 10px;
+    color:white; 
+    letter-spacing: 10px;     
+}
+
+#consulting{
+    background-color: #7457C5;
+    margin-left: 1225px;
+    margin-top: 0px;
+    color:white;
+    letter-spacing: 3px;
+}

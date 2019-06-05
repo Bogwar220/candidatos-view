@@ -1,0 +1,27 @@
+<div align = "center" id = "body">
+  <h1>Titulo de: {{candidato.nombre}}</h1>
+  <h5>{{mensaje}}</h5>
+
+  <table>
+    <tr>
+      <td class = "underline">Nombre</td>
+      <td class = "inputs"><input type = "text" id ="nombre"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Centro</td>
+      <td class = "inputs"><input type = "text" id = "centro"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Nivel Educativo</td>
+      <td class = "inputs"><input type = "text" id = "nivelEd"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Fecha Expedicion</td>
+      <td class = "inputs"><input type = "text" id = "fechaExp"/></td>
+    </tr>
+  </table>
+
+  <button (click) = "addTitulo()" id = "add">Añadir Titulo</button>
+  <a routerLink = "/titulo"><button id = "volver">Volver</button></a>
+</div>
+

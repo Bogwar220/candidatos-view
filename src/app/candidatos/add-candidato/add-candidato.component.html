@@ -1,0 +1,59 @@
+<div align = "center" id = "body">
+  <h1>Añadir Candidato</h1>
+  <h4>
+    {{mensaje}}
+  </h4>
+  <table>
+    <tr>
+      <td class= "underline">Nombre</td>
+      <td class = "inputs"><input type = "text" id = "nombre"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Apellido1</td>
+      <td class = "inputs"><input type = "text" id = "apellido1"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Apellido2</td>
+      <td class = "inputs"><input type = "text" id = "apellido2"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">DNI</td>
+      <td class = "inputs"><input type = "text" id = "dni"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Direccion</td>
+      <td class = "inputs"><input type = "text" id ="direccion"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Poblacion</td>
+      <td class = "inputs"><input type = "text" id = "poblacion"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Codigo Postal</td>
+      <td class = "inputs"><input type = "text" id = "cp"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">E-Mail</td>
+      <td class = "inputs"><input type = "text" id = "email"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Telefono</td>
+      <td class = "inputs"><input type = "text"  id = "tlf"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Fecha de nacimiento</td>
+      <td class = "inputs"><input type = "text" id = "fechaNac"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Fecha de alta</td>
+      <td class = "inputs"><input type = "text" id="fechaAlta"/></td>
+    </tr>
+    <tr>
+      <td class= "underline">Fecha de baja</td>
+      <td class = "inputs"><input type ="text" id = "fechaBaja"/></td>
+    </tr>
+  </table>
+
+  <button (click) = "addCand()" id = "add">Añadir</button>
+  <a routerLink = "/candidato" routerLinkActive = "active"><button id = "volver">Volver</button></a>
+</div>

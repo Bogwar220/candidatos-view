@@ -1,0 +1,28 @@
+<div align = "center" id = "body">
+  <h1>{{titulo.nombre}}</h1>
+  <table>
+    <tr>
+      <td class = "underlines">Nombre</td>
+      <td class = "underlines">{{titulo.nombre}}</td>
+      <td><input type = "text" id = "nombre"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Centro</td>
+      <td class = "underlines">{{titulo.centro}}</td>
+      <td><input type = "text" id ="centro"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Nivel Educativo</td>
+      <td class = "underlines">{{titulo.nivelEd}}</td>
+      <td><input type = "text" id = "nivelEd"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Fecha Expediente</td>
+      <td class = "underlines">{{titulo.fechaExp}}</td>
+      <td><input type = "text" id = "fechaExp"/></td>
+    </tr>
+  </table>
+
+  <button (click) = "editTitulo()" id = "edit">Modificar</button>
+  <a routerLink = "/titulo"><button id = "volver">Volver</button></a>
+</div>>

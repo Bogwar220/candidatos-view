@@ -1,0 +1,34 @@
+<div align = "center" id = "body">
+  <h1>Experiencia laboral de: {{candidato.nombre}}</h1>
+  <h4>{{mensaje}}</h4>
+
+  <table>
+    <tr>
+      <td class = "underline">Puesto</td>
+      <td class = "inputs"><input type = "text" id = "puesto"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Empresa</td>
+      <td class = "inputs"><input type = "text" id = "empresa"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Funciones</td>
+      <td class = "inputs"><input type = "text" id = "funciones"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Cliente</td>
+      <td class = "inputs"><input type = "text" id = "cliente"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Fecha Inicio</td>
+      <td class = "inputs"><input type = "text" id = "fechaIni"/></td>
+    </tr>
+    <tr>
+      <td class = "underline">Fecha Final</td>
+      <td class = "inputs"><input type = "text" id = "fechaFin"/></td>
+    </tr>
+  </table>
+
+  <button (click) ="addExpLab()" id = "add">Añadir</button>
+  <a routerLink = "/expLab"><button id = "volver">Volver</button></a>
+</div>

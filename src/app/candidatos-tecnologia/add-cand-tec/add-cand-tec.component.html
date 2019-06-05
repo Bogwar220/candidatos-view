@@ -1,0 +1,38 @@
+<body>
+  <div align = "center"> 
+    <h1>Tecnologias de {{candidato.nombre}}</h1>
+  </div>
+
+  <div class = "tbl-header">
+    <table cellpadding = "0" cellspacing = "0" border = "0">
+      <thead>
+        <tr>
+          <th>Borrar</th>
+          <th>Añadir</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class = "tbl-content">
+    <table border= "0">
+      <tbody>
+        <tr>
+          <td>
+            <div align ="left">
+              <ul>
+                <li type = "none" *ngFor = "let candTec of candTecs"><button (click) = "delTec(candTec)" class = "botonMenos">-</button>{{candTec.tecnologia.nombre}}</li>
+              </ul>
+          </div>
+          </td>
+          <td>
+            <ul>
+              <li type = "none" *ngFor = "let tecNo of tecNos"><span class = "listas">{{tecNo.nombre}}</span><button (click) = "addTec(tecNo)" class = "botonMas">+</button></li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>    
+  </div>
+  <a routerLink = "/candTec" routerLinkActivated = "active"><button id = "volver">Volver</button></a>
+</body>
+

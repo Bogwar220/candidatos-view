@@ -1,0 +1,70 @@
+<div align = "center" id = "body">
+  <h4>
+    {{mensaje}}
+  </h4>
+    <table>
+      <tr>
+        <td class = "underlines">Nombre</td>
+        <td class = "underlines">{{candidato.nombre}}</td>
+        <td><input type = "text" id = "nombre"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Apellido1</td>
+        <td class = "underlines">{{candidato.apellido1}}</td>
+        <td><input type = "text" id = "apellido1"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Apellido2</td>
+        <td class = "underlines">{{candidato.apellido2}}</td>
+        <td><input type = "text" id = "apellido2"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">DNI</td>
+        <td class = "underlines">{{candidato.dni}}</td>
+        <td><input type = "text" id = "dni"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Direccion</td>
+        <td class = "underlines">{{candidato.direccion}}</td>
+        <td><input type = "text" id ="direccion"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Poblacion</td>
+        <td class = "underlines">{{candidato.poblacion}}</td>
+        <td><input type = "text" id = "poblacion"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Codigo Postal</td>
+        <td class = "underlines">{{candidato.cp}}</td>
+        <td><input type = "text" id = "cp"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">E-Mail</td>
+        <td class = "underlines">{{candidato.email}}</td>
+        <td><input type = "text" id = "email"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Telefono</td>
+        <td class = "underlines">{{candidato.tlf}}</td>
+        <td><input type = "text"  id = "tlf"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Fecha de nacimiento</td>
+        <td class = "underlines">{{candidato.fechaNac}}</td>
+        <td><input type = "text" id = "fechaNac"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Fecha de alta</td>
+        <td class = "underlines">{{candidato.fechaAlta}}</td>
+        <td><input type = "text" id="fechaAlta"/></td>
+      </tr>
+      <tr>
+        <td class = "underlines">Fecha de baja</td>
+        <td class = "underlines">{{candidato.fechaBaja}}</td>
+        <td><input type ="text" id = "fechaBaja"/></td>
+      </tr>
+    </table>
+  
+    <button (click) = "modifCand()" id = "edit">Modificar</button>
+    <a routerLink = "/candidato" routerLinkActive = "active"><button id = "volver">Volver</button></a>
+  </div>

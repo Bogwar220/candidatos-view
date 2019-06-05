@@ -1,0 +1,38 @@
+<div align = "center" id = "body">
+  <h1>{{candidato.nombre}}: {{expLab.puesto}}</h1>
+  <table>
+    <tr>
+      <td class = "underlines">Puesto</td>
+      <td class = "underlines">{{expLab.puesto}}</td>
+      <td><input type = "text" id = "puesto"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Empresa</td>
+      <td class = "underlines">{{expLab.empresa}}</td>
+      <td><input type = "text" id = "empresa"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Funciones</td>
+      <td class = "underlines">{{expLab.funciones}}</td>
+      <td><input type = "text" id = "funciones"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Cliente</td>
+      <td class = "underlines">{{expLab.cliente}}</td>
+      <td><input type = "text" id = "cliente"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Fecha inicia</td>
+      <td class = "underlines">{{expLab.fechaIni}}</td>
+      <td><input type = "text" id = "fechaIni"/></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Fecha Final</td>
+      <td class = "underlines">{{expLab.fechaFin}}</td>
+      <td><input type = "text" id = "fechaFin"/></td>
+    </tr>
+  </table>
+
+  <button (click) = "modifExpLab()" id = "edit">Modificar</button>
+  <a routerLink = "/expLab"><button id = "volver">Volver</button></a>
+</div>

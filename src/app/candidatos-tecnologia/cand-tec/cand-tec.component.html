@@ -1,0 +1,29 @@
+<div align = "center">
+  <h1>Tecnologias de : {{candidato.nombre}}</h1>
+</div>
+
+<div class = "tbl-header">
+  <table cellpadding = "0" cellspacing = "0" border = "0">
+    <thead>
+      <tr>      
+        <th><h3>Nombre</h3></th>      
+        <th><h3>Años de experiencia</h3></th>
+        <th></th>
+        <th><a routerLink = "/addCandTec"><button>Editar tecnologias a {{candidato.nombre}}</button></a></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+<div class = "tbl-content">
+  <table cellpadding = "0" cellspacing = "0" border= "0"> 
+    <tbody>
+      <tr *ngFor = "let candTec of candTecs">      
+        <td>{{candTec.tecnologia.nombre}}</td> 
+        <td>{{candTec.nivel}}</td>     
+        <td><input type = "text" #exp></td>
+        <td><button (click) = "modifCandTec(candTec, exp.value)">Cambiar experiencia</button></td>
+      </tr>
+    </tbody>
+  </table>  
+</div>
+<a routerLink = "/candidato"><button id = "volver">Volver</button></a>

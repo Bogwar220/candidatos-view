@@ -1,0 +1,29 @@
+<div align = "center">
+  <h1>Tecnologias</h1>
+</div>
+
+<div class = "tbl-header">
+  <table cellpadding = "0" cellspacing = "0" border = "0">
+    <thead>
+      <tr>
+        <th><h3>Nombre</h3></th>
+        <th><h3>Descripcion</h3></th>
+        <th id = "lastHeadTile"><a routerLink = "/addTecnologia" routerLinkActivated = "active"><button>Add Tecnologia</button></a></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+<div class = "tbl-content">
+  <table cellpadding = "0" cellspacing = "0" border = "0">
+    <tbody>
+      <tr *ngFor = "let tec of tecnologias">
+        <td>{{tec.nombre}}</td>
+        <td id = "descTile">{{tec.descripcion}}</td>
+        <td id = "lastTile">
+          <button (click) = "delTec(tec.id)" id = "delBt">Borrar</button>
+          <a routerLink = "/editTecnologia" routerLinkActivated = "active"><button (click) = "modifTec(tec)">Modificar</button></a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

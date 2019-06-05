@@ -1,0 +1,64 @@
+<body>
+  <div align = "center">
+    <h1>{{candidato.nombre}} {{candidato.apellido1}}</h1>
+  </div>
+
+  <div align = "right" id = "edit">
+    <a routerLink = "/editCandidato"><button>Modificar</button></a>
+  </div>
+
+  <div align = "center">
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>{{candidato.nombre}}</td>
+      </tr>
+      <tr>
+        <td>Apellido1</td>
+        <td>{{candidato.apellido1}}</td>
+      </tr>
+      <tr>
+        <td>Apellido2</td>
+        <td>{{candidato.apellido2}}</td>
+      </tr>
+      <tr>
+        <td>DNI</td>
+        <td>{{candidato.dni}}</td>
+      </tr>
+      <tr>
+        <td>Direccion</td>
+        <td>{{candidato.direccion}}</td>
+      </tr>
+      <tr>
+        <td>Poblacion</td>
+        <td>{{candidato.poblacion}}</td>
+      </tr>
+      <tr>
+        <td>Codigo Postal</td>
+        <td>{{candidato.cp}}</td>
+      </tr>
+      <tr>
+        <td>E-Mail</td>
+        <td>{{candidato.email}}</td>
+      </tr>
+      <tr>
+        <td>Telefono</td>
+        <td>{{candidato.telefono}}</td>
+      </tr>
+      <tr>
+        <td>Fecha de nacimiento</td>
+        <td>{{candidato.fechaNac}}</td>
+      </tr>
+      <tr>
+        <td>Fecha de alta</td>
+        <td>{{candidato.fechaAlta}}</td>
+      </tr>
+      <tr>
+        <td>Fecha de baja</td>
+        <td>{{candidato.fechaBaja}}</td>
+      </tr>
+    </table>
+
+    <a routerLink = "/candidato"><button id = "volver">Volver</button></a>
+  </div>
+</body>

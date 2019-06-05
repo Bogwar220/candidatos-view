@@ -1,0 +1,14 @@
+#body{
+    color: white;
+}
+button{
+    margin-top: 10px;
+    width: 100px;
+    height: 20px;
+}
+#volver{
+    margin-left: 30px;
+}
+#add{
+    margin-left: 5px;
+}

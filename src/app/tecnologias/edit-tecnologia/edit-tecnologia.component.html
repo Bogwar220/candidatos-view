@@ -1,0 +1,19 @@
+<div align = "center" id = "body">
+  <h4>{{mensaje}}</h4>
+  <table>    
+    <tr>
+      <td class = "underlines">Nombre</td>
+      <td class = "underlines">{{tecnologia.nombre}}</td>
+      <td class = "inputs"><input type = "text" id = "nombre"></td>
+    </tr>
+    <tr>
+      <td class = "underlines">Descripcion</td>
+      <td class = "underlines">{{tecnologia.descripcion}}</td>
+      <td class = "inputs"><input type = "text" id = "descripcion"></td>
+    </tr>
+  </table>
+
+  <button (click) = "modifTec()" id = "edit">Modificar</button>
+  <a routerLink = "/tecnologia" routerLinkActivated = "active"><button id = "volver">Volver</button></a>
+</div>
+
